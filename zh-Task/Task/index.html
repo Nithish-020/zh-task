@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./assets/Vector.png" alt="Logo" class="tk-logo">
+            </div>
+            <ul class="tk-routes">
+                <li>
+                    <a href="#">Feature</a>
+                    <div class="dropdown-content">
+                        <a href="#">Subpath 1</a>
+                        <a href="#">Subpath 2</a>
+                        <a href="#">Subpath 3</a>
+                        <a href="#">Subpath 4</a>
+                        <a href="#">Subpath 5</a>
+                        <a href="#">Subpath 6</a>
+                    </div>
+                </li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">App</a></li>
+                <li><button class="tk-signup-button">Get Started</button></li>
+            </ul>
+            <div class="tk-hamburger-menu" onclick="toggleDrawer()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <!-- Navigation Drawer -->
+        <div class="tk-drawer">
+            <div class="tk-drawer-close" onclick="toggleDrawer()">&times;</div>
+            <a href="#"></a>
+            <a href="#">Premium</a>
+            <a href="#">Blog</a>
+            <a href="#">App</a>
+            <button class="tk-signup-button">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Introduction Section starts here -->
+    <section class="tk-introduction">
+        <div class="tk-introduction-wrapper">
+            <div class="tk-introduction-content d-flex flex-column align-start justify-center">
+                <h1 class="tk-intro-title text-start">A small plant can give a big peace</h1>
+                <p class="tk-intro-description">
+                    Welcome to our website dedicated to the world of nursery
+                    plants! We are passionate about providing you with high-quality,
+                    healthy plants for your garden, landscape, or indoor space. Our
+                    nursery offers a wide variety of plants to choose from, including
+                    trees, shrubs, perennials, annuals, and more.
+                </p>
+                <button class="tk-explore-btn">Explore now</button>
+            </div>
+            <div class="tk-intro-image">
+                <div class="relative">
+                    <svg width="150" height="80" viewBox="0 0 150 80" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="absolute tk-intro-image-float">
+                        <rect x="90" y="50" width="60" height="30" rx="15" fill="#48B04C" />
+                        <rect x="50" width="100" height="30" rx="15" fill="#48B04C" />
+                        <rect width="30" height="30" rx="15" fill="#48B04C" />
+                    </svg>
+                    <div class="tk-intro-image-floatBar"></div>
+                </div>
+                <img src="./assets/pexels-ketut-subiyanto-4132363 1.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our service Section starts here -->
+    <section class="os-banner">
+        <div class="os-content">
+            <p>Our services</p>
+            <h1>To the valuable customers at any cost</h1>
+        </div>
+        <div class="os-carousel-wrapper"></div>
+        <div class="os-carousel">
+            <div class="grid-container">
+                <div class="div1">
+                    <img src="./assets/pexels-matheus-bertelli-18999166 1.png" alt="primary-img"
+                        class="os-carousel-img os-carousel-img-primary">
+                </div>
+                <div class="div2">
+                    <img src="./assets/pexels-carlos-jairo-6332857 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div3">
+                    <img src="./assets/pexels-merve-bayar-10753607 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div4">
+                    <img src="./assets/pexels-luis-marval-5672371 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div5">
+                    <img src="./assets/pexels-jessica-lewis-189367 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+            </div>
+            <div class="grid-container hide">
+                <div class="div2">
+                    <img src="./assets/pexels-matheus-bertelli-18999166 1.png" alt="primary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div1">
+                    <img src="./assets/pexels-luis-marval-5672371 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-primary">
+                </div>
+                <div class="div3">
+                    <img src="./assets/pexels-merve-bayar-10753607 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div4">
+                    <img src="./assets/pexels-carlos-jairo-6332857 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div5">
+                    <img src="./assets/pexels-jessica-lewis-189367 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+            </div>
+            <div class="grid-container hide">
+                <div class="div3">
+                    <img src="./assets/pexels-matheus-bertelli-18999166 1.png" alt="primary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div2">
+                    <img src="./assets/pexels-carlos-jairo-6332857 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div1">
+                    <img src="./assets/pexels-merve-bayar-10753607 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-primary">
+                </div>
+                <div class="div4">
+                    <img src="./assets/pexels-luis-marval-5672371 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div5">
+                    <img src="./assets/pexels-jessica-lewis-189367 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="div1">
+                    <img src="./assets/pexels-matheus-bertelli-18999166 1.png" alt="primary-img"
+                        class="os-carousel-img os-carousel-img-primary">
+                </div>
+                <div class="div2">
+                    <img src="./assets/pexels-carlos-jairo-6332857 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div3">
+                    <img src="./assets/pexels-merve-bayar-10753607 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div4">
+                    <img src="./assets/pexels-luis-marval-5672371 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div5">
+                    <img src="./assets/pexels-jessica-lewis-189367 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+            </div>
+            <div class="grid-container hide">
+                <div class="div2">
+                    <img src="./assets/pexels-matheus-bertelli-18999166 1.png" alt="primary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div1">
+                    <img src="./assets/pexels-jessica-lewis-189367 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-primary">
+                </div>
+                <div class="div3">
+                    <img src="./assets/pexels-merve-bayar-10753607 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div4">
+                    <img src="./assets/pexels-luis-marval-5672371 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+                <div class="div5">
+                    <img src="./assets/pexels-carlos-jairo-6332857 1.png" alt="secondary-img"
+                        class="os-carousel-img os-carousel-img-secondary">
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+        <div class="pagination-dots" id="paginationDots"></div>
+    </section>
+
+    <!-- Quick assurance Section starts here -->
+
+    <section class="qa-banner">
+        <div class="qa-flex qa-flex-reverse">
+            <div class="qa-img text-center">
+                <img src="./assets/agriculture.png" alt="qa-img1">
+            </div>
+            <div class="text-start">
+                <p class="qa-highlight-txt">Quality assurance</p>
+                <h1 class="qa-title">
+                    We provide quality and
+                    quantity of service</h1>
+                <p class="qa-description">
+                    Our plants are carefully selected from reputable growers and
+                    nurseries across the country to ensure that they are healthy,
+                    vibrant, and ready to thrive in their new environment. We
+                    take pride in the quality of our plants, and we are confident
+                    that you will be satisfied with your purchase.
+                </p>
+            </div>
+        </div>
+        <div class="qa-flex">
+            <div class="text-start">
+                <p class="qa-highlight-txt">Quality assurance</p>
+                <h1 class="qa-title">
+                    Digital age experience
+                    in all forms of workse</h1>
+                <p class="qa-description">
+                    At our nursery, we are committed to providing our
+                    customers with the best possible experience. Our
+                    knowledgeable staff is always available to answer your
+                    questions and offer advice on the best plants for your
+                    needs. We also offer delivery and planting services to
+                    make your experience as seamless as possible.
+                </p>
+            </div>
+            <div class="qa-img">
+                <img src="./assets/agriculture-02.png" alt="qa-img2">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section starts here -->
+    <section class="faq-banner">
+        <div class="faq-content-wrapper">
+            <h1 class="faq-title">Frequently asked question</h1>
+            <p class="faq-description">
+                Our website is the perfect destination for all of your nursery plant needs.
+                we look forward to helping you create the garden of your dreams!
+            </p>
+        </div>
+
+        <div class="faq-menu-wrapper">
+            <div class="menu-card menu-card-1">
+                <div class="menu-card-head d-flex">
+                    <h3 class="menu-card-title">Why Perennials used in our works?</h3>
+                </div>
+                <p class="menu-card-text">
+                    We offer a wide range of perennials, including flowering perennials,
+                    grasses, and groundcovers. They are perfect for adding color and
+                    texture to your garden.
+                </p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card-head d-flex">
+                    <h3 class="menu-card-title">How should we manage indoor plants?</h3>
+                </div>
+                <p class="menu-card-text">
+                    Depending on the type of plant, watering frequency can vary. In general, houseplants should be
+                    watered once or twice a week in the spring and summer, and less in the autumn and winter.
+                </p>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card-head d-flex">
+                    <h3 class="menu-card-title">What is shrubs?</h3>
+                </div>
+                <p class="menu-card-text">
+                    Shrubs are also called bushes. They are easy to recognize because they are short and bushy, with
+                    only a small part of the stem visible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial Section starts here -->
+    <section class="ts-banner">
+        <div class="ts-content text-center">
+            <h1 class="ts-title">Testimonials</h1>
+            <p class="ts-description">
+                Whether they're looking for development speed, better process, or
+                unlocking new capabilities, Noodle shows people the super-powers
+                they didn't know they had.
+            </p>
+        </div>
+        <div class="ts-carousel-wrapper">
+            <div class="slider-container">
+                <div class="arrow left-arrow">
+                    <img src="./assets/controlVector.png" alt="arrow">
+                </div>
+                <div class="slider" id="slider">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-đỗ-ngọc-tú-quyên-1520760 1.png" alt="do-ngoc">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="cardWidth">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-iva-prime-5795034 1.png" alt="iva-prime">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-aghashukur-mammadli-15422042 1.png" alt="aghashukur">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-đỗ-ngọc-tú-quyên-1520760 1.png" alt="">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-aghashukur-mammadli-15422042 1.png" alt="aghashukur">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-iva-prime-5795034 1.png" alt="iva-prime">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-đỗ-ngọc-tú-quyên-1520760 1.png" alt="">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-aghashukur-mammadli-15422042 1.png" alt="aghashukur">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="./assets/pexels-iva-prime-5795034 1.png" alt="">
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    "The customer service
+                                    representative I spoke with was
+                                    extremely helpful and resolved
+                                    my issue in no time. Thank you!"
+                                </p>
+                                <span class="card-text-highlight">- Joseph chuckman, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow right-arrow">
+                    <img src="./assets/controlVector.png" alt="arrow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section starts here -->
+    <footer class="footer_wrapper">
+        <div class="search-wrapper">
+            <div class="footer-text">
+                <h1>Join our newsletter</h1>
+                <p>We'll send you a nice email every week once in a month</p>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Enter email address">
+                <button class="search-button">Get Started</button>
+            </div>
+        </div>
+
+        <div class="footer-text copyright">
+            <p>copyrights@nurseryplants.com</p>
+
+            <div class="social_media-icon">
+                <a href="https://www.youtube.com/zoho" target="_blank">
+                    <img src="./assets/yt_logo_rgb_light 1.png" alt="youtube">
+                </a>
+                <a href="https://twitter.com/Zoho?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                    target="_blank">
+                    <img src="./assets/logo 1.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/zoho/?hl=en" target="_blank">
+                    <img src="./assets/InstagaramIcon.png " alt="instagram"></a>
+            </div>
+        </div>
+        <div class="copyright text-center">
+        </div>
+    </footer>
+    <script>
+    
+
+       
+    </script>
+</body>
+
+</html>
